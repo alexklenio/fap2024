@@ -4,7 +4,7 @@
     <span> Formação Acelerada de Programadores - FrontEnd</span>
 </h1>
 
-## Objetivo
+## ✨ Objetivo
 Repositório destinado a resolução de atividades e projetos do FAP2024.1 - SOFTEX.
 
 ## 🛠️ Tecnologias e Ferramentas
