@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Tutorial de Alert em JavaScript - Linha de Código</title>
-
+    <link rel="stylesheet" href="./styles.css" />
     <script>
       function funcao1() {
         var mes = parseInt(prompt("Informe um valor entre 01 e 12"));
@@ -46,12 +46,13 @@
             break;
           default:
             alert("O mês informado é inválido");
-            break;
         }
       }
     </script>
   </head>
   <body>
-    <input type="button" onclick="funcao1()" value="Exibir Alert" />
+    <div class="center">
+      <input type="button" class="teste" onclick="funcao1()" value="Executar" />
+    </div>
   </body>
 </html>
