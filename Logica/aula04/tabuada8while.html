@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tutorial de Alert em JavaScript - Linha de Código</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <script>
+      function funcao1() {
+        var i = parseInt(prompt("Digite o numero para gerar a tabuada: "));
+
+        if (i <= 10) {
+          cont = 1;
+          while (cont <= 10) {
+            console.log(cont + " x " + i + " = " + cont * i);
+            cont++;
+          }
+        } else {
+          alert("número inválido!");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="center">
+      <input
+        type="button"
+        class="teste"
+        onclick="funcao1()"
+        value="Inicializar programa"
+      />
+    </div>
+  </body>
+</html>
