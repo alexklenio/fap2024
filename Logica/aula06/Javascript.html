@@ -8,6 +8,8 @@
 
 const pesos = [];
 const notas = [];
+let mediaPonderada = 0;
+
 
 
  function getPeso() {
@@ -29,6 +31,21 @@ function inserirNotas(){
     //document.write(notas)
 }
 
+function getMedia() {
+  let somaNotasPonderadas = 0;
+  let somaPesos = 0;
+
+  for (let i = 0; i < notas.length; i++) {
+    somaNotasPonderadas += notas[i] * pesos[i];
+    somaPesos += pesos[i];
+  }
+
+  mediaPonderada = somaNotasPonderadas / somaPesos;
+
+  alert(`Sua média ponderada é:  ${mediaPonderada}`)
+}
+
+
 
 </script>
 </head>
@@ -38,6 +55,7 @@ function inserirNotas(){
 <h2>Cálculo da média do aluno</h2>
 <input type="button" onclick="inserirNotas()" value="Inserir notas" />
 <input type="button" onclick="getPeso()" value="Informe os pesos" />
+<input type="button" onclick="getMedia()" value="Calcule a média" />
 
 </body>
 </html></div>
