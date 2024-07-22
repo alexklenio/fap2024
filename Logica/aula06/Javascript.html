@@ -21,7 +21,7 @@ const notas = [];
 
 
 function inserirNotas(){
-    for(let i =1; i<4;i++){
+    for(let i =0; i<4;i++){
         const nota = parseFloat(prompt("digite a " + i + "° nota:"));
 
         notas.push(nota);
@@ -34,7 +34,7 @@ function inserirNotas(){
 </head>
 <body>
 
-=======
+
 <h2>Cálculo da média do aluno</h2>
 <input type="button" onclick="inserirNotas()" value="Inserir notas" />
 <input type="button" onclick="getPeso()" value="Informe os pesos" />
