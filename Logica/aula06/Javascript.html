@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Tutorial de Alert em JavaScript - Linha de Código</title>
+<title>Tutorial em JavaScript - Aula prática - Linha de Código</title>
+<meta charset="UTF-8"><meta>
 <script>
 
 
@@ -17,11 +18,26 @@ const pesos = [];
  }
 
  
+const notas = [];
+
+function inserirNotas(){
+    for(let i =1; i<4;i++){
+        const nota = parseFloat(prompt("digite a " + i + "° nota:"));
+
+        notas.push(nota);
+    }
+    //document.write(notas)
+}
+
+
 </script>
 </head>
 <body>
 
 <input type="button" onclick="getPeso()" value="Informe os pesos" />
+=======
+<h2>Cálculo da média do aluno</h2>
+<input type="button" onclick="inserirNotas()" value="Inserir notas" />
 
 </body>
 </html></div>
